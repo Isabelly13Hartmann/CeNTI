@@ -1,0 +1,111 @@
+:root {
+    --bg: #2b2b30;
+    --panel: #9d9da8;
+    --text: #ffffff;
+    --muted: #9aa0a6;
+    --accent: #e6e9ec;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, sans-serif;
+    background: linear-gradient(180deg, #000000, #2a2a3a);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
+
+.app {
+    width: 420px;
+    background: var(--panel);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 20px 50px rgba(126, 111, 111, 0.6);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+}
+
+.logo {
+    width: 48px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.brand span {
+    font-size: .85rem;
+    color: var(--muted);
+}
+
+.card {
+    border: 1px solid rgba(255,255,255,.05);
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+    min-height: 140px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.card strong {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.card em {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.hint {
+    color: var(--muted);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid rgba(146, 43, 43, 0.08);
+    background: linear-gradient(90deg, #222, #111);
+    color: var(--text);
+}
+
+button.ghost {
+    background: transparent;
+    color: var(--muted);
+}
+
+.status {
+    margin-top: 14px;
+    font-size: .85rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+.frase-sorteada {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.4px;
+}
+
